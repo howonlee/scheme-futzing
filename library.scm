@@ -1,7 +1,5 @@
 #lang mzscheme
 
-;;; Code examples from class from Joseph 
-
 ;; definition of a function. this squares a number.
 (define (square x)
   (* x x))
@@ -39,7 +37,6 @@
 
 ;; that was ok. however, it could be better.
 ;; the following version is tail-recursing
-;; it will use less memory, at the expense of (for now) having to write an extra function
 ;; when using explicit recursion, tail recursion is more efficient.  
 (define (my-length-tail-rec l)
   (my-length-tail-rec* l 0))
@@ -75,8 +72,6 @@
   (f 5))
 (define (twenty-five) (apply-to-5 square))
 
-;;; you have four basic high order functions: map, fold-left, fold-right and filter (some people might include others, we'll see em)
-;;; lets start with map
 ;;; map does this (map f (a_0 a_1 ... a_n)) = ((f a_0) (f a_1) ... (f a_n))
 
 ;;; in other words, it takes a list and a function, and applies the function
@@ -229,7 +224,6 @@
                           )
   )
 
-;;; other things to try: take-last, drop-last, cycle, partition, group-by, etc
 
 ;;; function stuff
 

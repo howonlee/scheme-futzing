@@ -1,12 +1,5 @@
 #lang mzscheme
 
-;;; This file will contain many of the code examples from class.  
-
-
-;;;;;;;;;;;;;;;;;;;;;;;;
-;;; THE BAICS ;;;;;;;;;;
-;;;;;;;;;;;;;;;;;;;;;;;;
-
 
 ;; define a function which squares a number: example of the basic syntax of scheme
 (define (square x)
@@ -178,7 +171,6 @@
   (lambda (x y) (f y x)))
 (define (my-reverse2 l) (fold-left (flip cons) '() l))
 
-;;; i know some args now, will know the rest later!
 ;;; this is one of the most important functions!!!!
 (define (curry f . xs)
   (lambda ys
